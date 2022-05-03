@@ -17,6 +17,8 @@
 		31FA36EA2820F6630001BDDB /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA36E82820F6630001BDDB /* Movie+CoreDataProperties.swift */; };
 		31FA36EF2820FA980001BDDB /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA36EE2820FA980001BDDB /* DataModel.swift */; };
 		31FA36F1282192530001BDDB /* ConditionalSaving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA36F0282192530001BDDB /* ConditionalSaving.swift */; };
+		31FA36F5282194B00001BDDB /* WizardModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 31FA36F3282194B00001BDDB /* WizardModel.xcdatamodeld */; };
+		31FA36F7282195BC0001BDDB /* WizardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA36F6282195BC0001BDDB /* WizardContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		31FA36ED2820F70D0001BDDB /* ReadMe1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadMe1.h; sourceTree = "<group>"; };
 		31FA36EE2820FA980001BDDB /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		31FA36F0282192530001BDDB /* ConditionalSaving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalSaving.swift; sourceTree = "<group>"; };
+		31FA36F4282194B00001BDDB /* WizardModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WizardModel.xcdatamodel; sourceTree = "<group>"; };
+		31FA36F6282195BC0001BDDB /* WizardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizardContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +68,9 @@
 		31FA36CE282059C00001BDDB /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
+				31FA36F2282194960001BDDB /* Entity2 */,
 				31FA36E62820F5B40001BDDB /* Entity */,
 				31FA36CF282059C00001BDDB /* CoreDataProjectApp.swift */,
-				31FA36EE2820FA980001BDDB /* DataModel.swift */,
 				31FA36D1282059C00001BDDB /* ContentView.swift */,
 				31FA36E32820E96C0001BDDB /* UsingSelf.swift */,
 				31FA36F0282192530001BDDB /* ConditionalSaving.swift */,
@@ -101,6 +105,16 @@
 				31FA36E228205B320001BDDB /* DataModel */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		31FA36F2282194960001BDDB /* Entity2 */ = {
+			isa = PBXGroup;
+			children = (
+				31FA36F3282194B00001BDDB /* WizardModel.xcdatamodeld */,
+				31FA36EE2820FA980001BDDB /* DataModel.swift */,
+				31FA36F6282195BC0001BDDB /* WizardContentView.swift */,
+			);
+			path = Entity2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +192,8 @@
 				31FA36D2282059C00001BDDB /* ContentView.swift in Sources */,
 				31FA36D0282059C00001BDDB /* CoreDataProjectApp.swift in Sources */,
 				31FA36E92820F6630001BDDB /* Movie+CoreDataClass.swift in Sources */,
+				31FA36F7282195BC0001BDDB /* WizardContentView.swift in Sources */,
+				31FA36F5282194B00001BDDB /* WizardModel.xcdatamodeld in Sources */,
 				31FA36EA2820F6630001BDDB /* Movie+CoreDataProperties.swift in Sources */,
 				31FA36F1282192530001BDDB /* ConditionalSaving.swift in Sources */,
 				31FA36DF282059EC0001BDDB /* CoreDataProjectOne.xcdatamodeld in Sources */,
@@ -392,6 +408,16 @@
 			);
 			currentVersion = 31FA36DE282059EC0001BDDB /* CoreDataProject.xcdatamodel */;
 			path = CoreDataProjectOne.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		31FA36F3282194B00001BDDB /* WizardModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				31FA36F4282194B00001BDDB /* WizardModel.xcdatamodel */,
+			);
+			currentVersion = 31FA36F4282194B00001BDDB /* WizardModel.xcdatamodel */;
+			path = WizardModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
