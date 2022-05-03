@@ -9,10 +9,10 @@ import Foundation
 import CoreData
 
 class DataModel: ObservableObject {
-    let container = NSPersistentContainer(name: "CoreDataProject")
+    let container = NSPersistentContainer(name: "CoreDataProjectOne")
     
     init(){
-        container.loadPersistentStores { descrpition , error in
+        container.loadPersistentStores { description, error in
             if let error = error {
                 print("Failed to load CoreData: \(error.localizedDescription)")
             }
