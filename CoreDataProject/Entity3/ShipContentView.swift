@@ -36,6 +36,8 @@ struct ShipContentView: View {
      6. NSPredicate(format: "NOT name CONTAINS %@", "E")
             'NOT', is equivelent to the ! symbol in the example: !false.
      
+     7. NSPredicate(format: "%K BEGINSWITH %@", filterKey, filterValue)
+            '%K', K = Key. Use this to pass a key if using a custom Filter/ @FetchRequest, like we do in FilteredList()
      
      */
     
