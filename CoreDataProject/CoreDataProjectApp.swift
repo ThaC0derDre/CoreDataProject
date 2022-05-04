@@ -10,11 +10,12 @@ import SwiftUI
 @main
 struct CoreDataProjectApp: App {
 //    @StateObject private var dataModel  = DataModel()
-    @StateObject private var shipDataModel  = ShipDataModel()
+//    @StateObject private var shipDataModel  = ShipDataModel()
+    @StateObject private var dataModel  = SingerDM()
     var body: some Scene {
         WindowGroup {
-            ShipContentView()
-                .environment(\.managedObjectContext, shipDataModel.container.viewContext)
+            DFContentView()
+                .environment(\.managedObjectContext, dataModel.container.viewContext)
         }
     }
 }

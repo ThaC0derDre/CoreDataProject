@@ -22,6 +22,12 @@
 		31FA36FA2821D8360001BDDB /* ShipContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA36F92821D8360001BDDB /* ShipContentView.swift */; };
 		31FA36FD2821D8460001BDDB /* ShipModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 31FA36FB2821D8460001BDDB /* ShipModel.xcdatamodeld */; };
 		31FA36FF2821D86D0001BDDB /* ShipDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA36FE2821D86D0001BDDB /* ShipDataModel.swift */; };
+		31FA37032822088C0001BDDB /* DynamicFilterOfSingers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 31FA37012822088C0001BDDB /* DynamicFilterOfSingers.xcdatamodeld */; };
+		31FA3706282208CD0001BDDB /* Singer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA3704282208CD0001BDDB /* Singer+CoreDataClass.swift */; };
+		31FA3707282208CD0001BDDB /* Singer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA3705282208CD0001BDDB /* Singer+CoreDataProperties.swift */; };
+		31FA3709282209210001BDDB /* SingerDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA3708282209210001BDDB /* SingerDM.swift */; };
+		31FA370C28220A4B0001BDDB /* DFContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA370B28220A4B0001BDDB /* DFContentView.swift */; };
+		31FA370E28220C300001BDDB /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA370D28220C300001BDDB /* FilteredList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +48,12 @@
 		31FA36F92821D8360001BDDB /* ShipContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipContentView.swift; sourceTree = "<group>"; };
 		31FA36FC2821D8460001BDDB /* ShipModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShipModel.xcdatamodel; sourceTree = "<group>"; };
 		31FA36FE2821D86D0001BDDB /* ShipDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipDataModel.swift; sourceTree = "<group>"; };
+		31FA37022822088C0001BDDB /* DynamicFilterOfSingers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DynamicFilterOfSingers.xcdatamodel; sourceTree = "<group>"; };
+		31FA3704282208CD0001BDDB /* Singer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataClass.swift"; sourceTree = "<group>"; };
+		31FA3705282208CD0001BDDB /* Singer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		31FA3708282209210001BDDB /* SingerDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingerDM.swift; sourceTree = "<group>"; };
+		31FA370B28220A4B0001BDDB /* DFContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFContentView.swift; sourceTree = "<group>"; };
+		31FA370D28220C300001BDDB /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,13 +86,13 @@
 		31FA36CE282059C00001BDDB /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
+				31FA3700282208600001BDDB /* Entity4 */,
 				31FA36F82821D8210001BDDB /* Entity3 */,
 				31FA36F2282194960001BDDB /* Entity2 */,
 				31FA36E62820F5B40001BDDB /* Entity */,
+				31FA370A282209BF0001BDDB /* First Tuts */,
 				31FA36CF282059C00001BDDB /* CoreDataProjectApp.swift */,
 				31FA36D1282059C00001BDDB /* ContentView.swift */,
-				31FA36E32820E96C0001BDDB /* UsingSelf.swift */,
-				31FA36F0282192530001BDDB /* ConditionalSaving.swift */,
 				31FA36D3282059C10001BDDB /* Assets.xcassets */,
 				31FA36D5282059C10001BDDB /* Preview Content */,
 			);
@@ -132,6 +144,28 @@
 				31FA36FE2821D86D0001BDDB /* ShipDataModel.swift */,
 			);
 			path = Entity3;
+			sourceTree = "<group>";
+		};
+		31FA3700282208600001BDDB /* Entity4 */ = {
+			isa = PBXGroup;
+			children = (
+				31FA3704282208CD0001BDDB /* Singer+CoreDataClass.swift */,
+				31FA3705282208CD0001BDDB /* Singer+CoreDataProperties.swift */,
+				31FA37012822088C0001BDDB /* DynamicFilterOfSingers.xcdatamodeld */,
+				31FA3708282209210001BDDB /* SingerDM.swift */,
+				31FA370B28220A4B0001BDDB /* DFContentView.swift */,
+				31FA370D28220C300001BDDB /* FilteredList.swift */,
+			);
+			path = Entity4;
+			sourceTree = "<group>";
+		};
+		31FA370A282209BF0001BDDB /* First Tuts */ = {
+			isa = PBXGroup;
+			children = (
+				31FA36F0282192530001BDDB /* ConditionalSaving.swift */,
+				31FA36E32820E96C0001BDDB /* UsingSelf.swift */,
+			);
+			path = "First Tuts";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,9 +238,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31FA37032822088C0001BDDB /* DynamicFilterOfSingers.xcdatamodeld in Sources */,
 				31FA36EF2820FA980001BDDB /* DataModel.swift in Sources */,
+				31FA3706282208CD0001BDDB /* Singer+CoreDataClass.swift in Sources */,
 				31FA36FF2821D86D0001BDDB /* ShipDataModel.swift in Sources */,
 				31FA36E42820E96C0001BDDB /* UsingSelf.swift in Sources */,
+				31FA3709282209210001BDDB /* SingerDM.swift in Sources */,
+				31FA370E28220C300001BDDB /* FilteredList.swift in Sources */,
 				31FA36D2282059C00001BDDB /* ContentView.swift in Sources */,
 				31FA36D0282059C00001BDDB /* CoreDataProjectApp.swift in Sources */,
 				31FA36E92820F6630001BDDB /* Movie+CoreDataClass.swift in Sources */,
@@ -214,7 +252,9 @@
 				31FA36F7282195BC0001BDDB /* WizardContentView.swift in Sources */,
 				31FA36F5282194B00001BDDB /* WizardModel.xcdatamodeld in Sources */,
 				31FA36EA2820F6630001BDDB /* Movie+CoreDataProperties.swift in Sources */,
+				31FA370C28220A4B0001BDDB /* DFContentView.swift in Sources */,
 				31FA36F1282192530001BDDB /* ConditionalSaving.swift in Sources */,
+				31FA3707282208CD0001BDDB /* Singer+CoreDataProperties.swift in Sources */,
 				31FA36DF282059EC0001BDDB /* CoreDataProjectOne.xcdatamodeld in Sources */,
 				31FA36FD2821D8460001BDDB /* ShipModel.xcdatamodeld in Sources */,
 			);
@@ -448,6 +488,16 @@
 			);
 			currentVersion = 31FA36FC2821D8460001BDDB /* ShipModel.xcdatamodel */;
 			path = ShipModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		31FA37012822088C0001BDDB /* DynamicFilterOfSingers.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				31FA37022822088C0001BDDB /* DynamicFilterOfSingers.xcdatamodel */,
+			);
+			currentVersion = 31FA37022822088C0001BDDB /* DynamicFilterOfSingers.xcdatamodel */;
+			path = DynamicFilterOfSingers.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
