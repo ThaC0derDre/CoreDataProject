@@ -16,6 +16,15 @@ import SwiftUI
 */
 
 struct FilteredList: View {
+    
+    enum FilterMethod: String {
+        case beginsWith     = "BEGINSWITH"
+        case contains       = "CONTAINS"
+        case lessThan       = "<"
+        case greaterThan    = ">"
+    }
+    
+    
     // 1
     @FetchRequest var fetchRequest: FetchedResults<Singer>
     var body: some View {
@@ -25,8 +34,8 @@ struct FilteredList: View {
         }
     }
     // 2
-    init(filter: String){
-        _fetchRequest = FetchRequest<Singer>(sortDescriptors: [], predicate: NSPredicate(format: "lastName BEGINSWITH %@", filter))
+    init(predicate: String, filterMethod: FilterMethod , filter: String, sortDescriptor: [SortDescriptor<Singer>]?){
+        _fetchRequest = FetchRequest<Singer>(sortDescriptors: sortDescriptor ?? [], predicate: NSPredicate(format: "\(predicate) \(filterMethod) %@", filter))
     }
 }
 

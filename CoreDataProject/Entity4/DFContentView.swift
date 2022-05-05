@@ -12,10 +12,11 @@ struct DFContentView: View {
     @Environment(\.managedObjectContext) var moc
     @State private var isDisabled       = false
     @State private var filteredLastName = "A"
+    
     var body: some View {
         VStack{
             // Custom Filter!
-            FilteredList(filter: filteredLastName)
+            FilteredList(predicate: "lastName", filterMethod: .beginsWith, filter: filteredLastName, sortDescriptor: [SortDescriptor(\.firstName, order: .reverse)])
             
             Button("Add Examples"){
                 let taylor  = Singer(context: moc)
